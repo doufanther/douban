@@ -1,7 +1,8 @@
 <template>
 	<div class="login">
-		<Input v-model="value" placeholder="请输入..." style="width: 300px"></Input>
-	    <Button type="primary" icon="ios-location" @click="submit">提交</Button>
+		<h1>欢迎</h1>
+		<Input v-model="value" placeholder="请输入密码" style="width: 300px"></Input>
+	    <Button type="primary" @click="submit">提交</Button>
 	</div>
 </template>
 
@@ -17,7 +18,8 @@
 		},
 		data() {
 		    return {
-		    	
+		    	myPassword:'123456',
+		    	value:''
 			}
 		},
 		created(){
@@ -27,7 +29,13 @@
 		   
 		},
 		methods: {
-			
+			submit(){
+				if(this.value===this.myPassword){
+					this.$router.push({ name: 'shufa'})
+				}else{
+					 this.$Message.info('密码错误，请重新输入');
+				}
+			}
 		}
 	}
 </script>

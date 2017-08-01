@@ -36,6 +36,7 @@
 	
 	
   export default {
+  	name:'shufa',
     data() {
       return {
         value7:''
