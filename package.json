@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "china-area-data": "^3.0.0",
+    "iview": "^2.0.0",
     "mint-ui": "^2.2.7",
     "vue": "^2.3.3",
     "vue-awesome-swiper": "^2.5.4",

@@ -1,18 +1,19 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Mint from 'mint-ui';
-import 'mint-ui/lib/style.css'
-Vue.use(Mint);
+import iView from 'iview';
+import 'iview/dist/styles/iview.css'; 
+import login from '../components/login';
+Vue.use(iView);
 
 Vue.use(Router)
 
 
 export default new Router({
   routes: [
-//  {
-//    path: '/',
-//    name: 'Hello',
-//    component: Hello
-//  }
+    {
+      path: '/',
+      name: 'login',
+      component: login
+    }
   ]
 })

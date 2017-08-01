@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-		<shufa></shufa>
+		 <router-view></router-view>
 	</div>
 </template>
 
