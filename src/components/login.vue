@@ -1,6 +1,6 @@
 <template>
 	<div class="login">
-		<h1>欢迎</h1>
+		<h1>欢迎888888888</h1>
 		<Input v-model="value" placeholder="请输入密码" style="width: 300px"></Input>
 	    <Button type="primary" @click="submit">提交</Button>
 	</div>
