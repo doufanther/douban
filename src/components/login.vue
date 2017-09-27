@@ -1,8 +1,13 @@
 <template>
 	<div class="login">
 		<h1>欢迎</h1>
-		<Input v-model="value" placeholder="请输入密码" style="width: 300px"></Input>
-	    <Button type="primary" @click="submit">提交</Button>
+		<div v-if="name">
+			输入名字<Input type="text" v-model="name" style="width: 300px"/></Input>
+		</div>
+		<div v-else>
+			<Input v-model="value" placeholder="请输入密码" style="width: 300px"></Input>
+	    	<Button type="primary" @click="submit">提交</Button>
+		</div>
 	</div>
 </template>
 
@@ -19,7 +24,8 @@
 		data() {
 		    return {
 		    	myPassword:'123456',
-		    	value:''
+		    	value:'',
+		    	name:'1'
 			}
 		},
 		created(){
